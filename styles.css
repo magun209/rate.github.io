@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: #252d37;
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+    
+    
+
+.card {
+    background: rgb(89,95,112);
+    background: radial-gradient(circle, rgba(89,95,112,1) 0%, rgba(24,30,40,1) 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    border-radius: 20px;
+}
+
+
+#div-star-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em; 
+    margin-bottom: 25px;
+    background-color: #4e555d76;
+    border-radius: 100px;
+}
+
+#div-text {
+    max-width: 350px;
+}
+
+h1 {
+    color: var(--White);
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+p {
+    color: var(--Medium-Grey);
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+#number-rate {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px; 
+}
+
+#number-rate span {
+    background-color: var(--Dark-Blue);
+    color: var(--White);
+    border-radius: 50px;
+    text-align: center;
+    /* margin-right: 20px;  */
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+#number-rate span:last-child {
+    margin-right: 0px; 
+}
+
+#number-rate span:hover {
+    background-color: var(--Medium-Grey); 
+}
+
+/* 
+#number-rate span {
+  width:30px;
+  height:30px;
+    background-color: var(--Dark-Blue);
+    color: var(--White);
+  margin: 5px;
+  padding:10px;
+  border-radius: 100px;
+  font-size:11px;
+  line-height:32px;
+
+  float:left;
+} */
+
+
+#btn-submit {
+    text-transform: uppercase;
+    color: var(--White);
+    background-color: var(--Orange);
+    letter-spacing: 4px;
+    border: none;
+    outline: none;
+    padding: .8em;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+#btn-submit:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------
+Second State 
+-------------------------------------------------------------------------- */
+
+#second-card {
+    text-align: center;
+}
+
+#ilustration-thanks {
+    margin: auto;
+}
+
+#rate {
+    background-color: #4e555d76;
+    color: var(--Orange);
+    width: 200px;
+    margin: auto;
+    border-radius: 50px;
+    padding: .2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.2em;
+}
+
+#text-div-thanks h2 {
+    margin-bottom: .5em;
+    color: white;
+}
+
+#text-div-thanks p {
+    color: var(--Medium-Grey);
+    width: 290px;
+    font-size: .8em;
+}
+
+#second-card {
+    display: none;
+}
+
